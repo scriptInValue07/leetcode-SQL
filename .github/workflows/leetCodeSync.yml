@@ -9,9 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run LeetCode Sync
+      - name: Sync
         uses: joshcai/leetcode-sync@v1.7
         with:
-          github_token: ${{ github.token }}
-          leetcode_csrf_token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-          leetcode_session: ${{ secrets.LEETCODE_SESSION }}
+          github-token: ${{ github.token }}
+          leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          leetcode-session: ${{ secrets.LEETCODE_SESSION }}
+          verbose: true
