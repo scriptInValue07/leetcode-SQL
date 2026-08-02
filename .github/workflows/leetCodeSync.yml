@@ -9,10 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run LeetCode Synchronizer
-        uses: dos-m0nk3y/LeetCode-Synchronizer@v1.1.0
+      - name: Run LeetCode Sync
+        uses: CarreD04/Leetcode-Sync@v1.4
         with:
-          GITHUB_TOKEN: ${{ github.token }}
-          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
-          LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-          LANG: Oracle
+          github_token: ${{ github.token }}
+          leetcode_csrf_token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          leetcode_session: ${{ secrets.LEETCODE_SESSION }}
