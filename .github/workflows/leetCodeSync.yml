@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run LeetCode Sync
-        uses: CarreD04/Leetcode-Sync@v1.4
+        uses: joshcai/leetcode-sync@v1.7
         with:
           github_token: ${{ github.token }}
           leetcode_csrf_token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
